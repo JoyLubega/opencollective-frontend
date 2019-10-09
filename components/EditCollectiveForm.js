@@ -141,10 +141,6 @@ class EditCollectiveForm extends React.Component {
         id: 'collective.description.label',
         defaultMessage: 'Short description',
       },
-      'longDescription.label': {
-        id: 'collective.longDescription.label',
-        defaultMessage: 'Long description',
-      },
       'expensePolicy.label': {
         id: 'collective.expensePolicy.label',
         defaultMessage: 'Collective expense policy',
@@ -483,12 +479,6 @@ class EditCollectiveForm extends React.Component {
           },
         },
         {
-          name: 'longDescription',
-          type: 'textarea',
-          placeholder: '',
-          description: 'Protip: you can use markdown',
-        },
-        {
           name: 'tags',
           maxLength: 128,
           type: 'tags',
@@ -596,10 +586,6 @@ class EditCollectiveForm extends React.Component {
 
             .FormInputs {
               overflow-x: hidden;
-            }
-
-            .EditCollectiveForm :global(textarea[name='longDescription']) {
-              height: 30rem;
             }
 
             .EditCollectiveForm :global(textarea[name='expensePolicy']) {
